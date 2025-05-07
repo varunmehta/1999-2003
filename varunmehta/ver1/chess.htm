@@ -1,0 +1,725 @@
+<html>
+<head>
+<title>Varun Mehta : Games</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+a:active {  text-decoration: none}
+a:hover {  color: #FF0000; text-decoration: none}
+a:link {  text-decoration: none}
+a:visited {  text-decoration: none}
+-->
+</style>
+<script language="JavaScript">
+<!--
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(22);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["chess"] ? document["chess"].document["board"].document["checkmate"] : document["board"].document["checkmate"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["checkmate"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(73, 75, 87);
+    document.MM_Time[0][0].values = new Array(1);
+    document.MM_Time[0][0].values[0] = new Array("hidden","visible","visible");
+    document.MM_Time[0][0].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][0].values[0].prop2 = "style";
+    document.MM_Time[0][1] = new String("sprite");
+    document.MM_Time[0][1].slot = 1;
+    if (ns)
+        document.MM_Time[0][1].obj = document["chess"] ? document["chess"].document["board"].document["blackqueen"] : document["board"].document["blackqueen"];
+    else
+        document.MM_Time[0][1].obj = document.all ? document.all["blackqueen"] : null;
+    document.MM_Time[0][1].keyFrames = new Array(50, 59);
+    document.MM_Time[0][1].values = new Array(2);
+    document.MM_Time[0][1].values[0] = new Array(272,303,335,366,397,429,460,491,523,554);
+    document.MM_Time[0][1].values[0].prop = "left";
+    document.MM_Time[0][1].values[1] = new Array(29,49,68,88,108,127,147,167,186,206);
+    document.MM_Time[0][1].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][1].values[0].prop2 = "style";
+        document.MM_Time[0][1].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 1;
+    if (ns)
+        document.MM_Time[0][2].obj = document["chess"] ? document["chess"].document["board"].document["whitwpond2"] : document["board"].document["whitwpond2"];
+    else
+        document.MM_Time[0][2].obj = document.all ? document.all["whitwpond2"] : null;
+    document.MM_Time[0][2].keyFrames = new Array(40, 49);
+    document.MM_Time[0][2].values = new Array(2);
+    document.MM_Time[0][2].values[0] = new Array(418,418,418,418,418,417,417,417,417,417);
+    document.MM_Time[0][2].values[0].prop = "left";
+    document.MM_Time[0][2].values[1] = new Array(300,294,288,283,277,271,265,260,254,248);
+    document.MM_Time[0][2].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][2].values[0].prop2 = "style";
+        document.MM_Time[0][2].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][3] = new String("sprite");
+    document.MM_Time[0][3].slot = 1;
+    if (ns)
+        document.MM_Time[0][3].obj = document["chess"] ? document["chess"].document["board"].document["blackpond"] : document["board"].document["blackpond"];
+    else
+        document.MM_Time[0][3].obj = document.all ? document.all["blackpond"] : null;
+    document.MM_Time[0][3].keyFrames = new Array(30, 39);
+    document.MM_Time[0][3].values = new Array(2);
+    document.MM_Time[0][3].values[0] = new Array(338,338,338,338,338,338,338,338,338,338);
+    document.MM_Time[0][3].values[0].prop = "left";
+    document.MM_Time[0][3].values[1] = new Array(82,91,100,109,118,126,135,144,153,162);
+    document.MM_Time[0][3].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][3].values[0].prop2 = "style";
+        document.MM_Time[0][3].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][4] = new String("sprite");
+    document.MM_Time[0][4].slot = 1;
+    if (ns)
+        document.MM_Time[0][4].obj = document["chess"] ? document["chess"].document["board"].document["whitepond1"] : document["board"].document["whitepond1"];
+    else
+        document.MM_Time[0][4].obj = document.all ? document.all["whitepond1"] : null;
+    document.MM_Time[0][4].keyFrames = new Array(20, 29);
+    document.MM_Time[0][4].values = new Array(2);
+    document.MM_Time[0][4].values[0] = new Array(486,486,486,486,486,486,486,486,486,486);
+    document.MM_Time[0][4].values[0].prop = "left";
+    document.MM_Time[0][4].values[1] = new Array(299,289,279,269,259,248,238,228,218,208);
+    document.MM_Time[0][4].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][4].values[0].prop2 = "style";
+        document.MM_Time[0][4].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][5] = new String("sprite");
+    document.MM_Time[0][5].slot = 1;
+    if (ns)
+        document.MM_Time[0][5].obj = document["finale"];
+    else
+        document.MM_Time[0][5].obj = document.all ? document.all["finale"] : null;
+    document.MM_Time[0][5].keyFrames = new Array(95, 109);
+    document.MM_Time[0][5].values = new Array(1);
+    document.MM_Time[0][5].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][5].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][5].values[0].prop2 = "style";
+    document.MM_Time[0][6] = new String("sprite");
+    document.MM_Time[0][6].slot = 1;
+    if (ns)
+        document.MM_Time[0][6].obj = document["finale"] ? document["finale"].document["playing"] : document["playing"];
+    else
+        document.MM_Time[0][6].obj = document.all ? document.all["playing"] : null;
+    document.MM_Time[0][6].keyFrames = new Array(110, 119);
+    document.MM_Time[0][6].values = new Array(1);
+    document.MM_Time[0][6].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][6].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][6].values[0].prop2 = "style";
+    document.MM_Time[0][7] = new String("sprite");
+    document.MM_Time[0][7].slot = 1;
+    if (ns)
+        document.MM_Time[0][7].obj = document["finale"] ? document["finale"].document["foolsgame"] : document["foolsgame"];
+    else
+        document.MM_Time[0][7].obj = document.all ? document.all["foolsgame"] : null;
+    document.MM_Time[0][7].keyFrames = new Array(120, 129);
+    document.MM_Time[0][7].values = new Array(1);
+    document.MM_Time[0][7].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][7].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][7].values[0].prop2 = "style";
+    document.MM_Time[0][8] = new String("sprite");
+    document.MM_Time[0][8].slot = 1;
+    if (ns)
+        document.MM_Time[0][8].obj = document["finale"] ? document["finale"].document["four"] : document["four"];
+    else
+        document.MM_Time[0][8].obj = document.all ? document.all["four"] : null;
+    document.MM_Time[0][8].keyFrames = new Array(130, 139);
+    document.MM_Time[0][8].values = new Array(1);
+    document.MM_Time[0][8].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][8].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][8].values[0].prop2 = "style";
+    document.MM_Time[0][9] = new String("sprite");
+    document.MM_Time[0][9].slot = 1;
+    if (ns)
+        document.MM_Time[0][9].obj = document["finale"] ? document["finale"].document["thatsall"] : document["thatsall"];
+    else
+        document.MM_Time[0][9].obj = document.all ? document.all["thatsall"] : null;
+    document.MM_Time[0][9].keyFrames = new Array(165, 174);
+    document.MM_Time[0][9].values = new Array(1);
+    document.MM_Time[0][9].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][9].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][9].values[0].prop2 = "style";
+    document.MM_Time[0][10] = new String("sprite");
+    document.MM_Time[0][10].slot = 1;
+    if (ns)
+        document.MM_Time[0][10].obj = document["finale"] ? document["finale"].document["foryouguys"] : document["foryouguys"];
+    else
+        document.MM_Time[0][10].obj = document.all ? document.all["foryouguys"] : null;
+    document.MM_Time[0][10].keyFrames = new Array(175, 184);
+    document.MM_Time[0][10].values = new Array(1);
+    document.MM_Time[0][10].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][10].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][10].values[0].prop2 = "style";
+    document.MM_Time[0][11] = new String("sprite");
+    document.MM_Time[0][11].slot = 1;
+    if (ns)
+        document.MM_Time[0][11].obj = document["finale"] ? document["finale"].document["enjoyed"] : document["enjoyed"];
+    else
+        document.MM_Time[0][11].obj = document.all ? document.all["enjoyed"] : null;
+    document.MM_Time[0][11].keyFrames = new Array(185, 194);
+    document.MM_Time[0][11].values = new Array(1);
+    document.MM_Time[0][11].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][11].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][11].values[0].prop2 = "style";
+    document.MM_Time[0][12] = new String("sprite");
+    document.MM_Time[0][12].slot = 1;
+    if (ns)
+        document.MM_Time[0][12].obj = document["finale"] ? document["finale"].document["mailsme"] : document["mailsme"];
+    else
+        document.MM_Time[0][12].obj = document.all ? document.all["mailsme"] : null;
+    document.MM_Time[0][12].keyFrames = new Array(195, 204);
+    document.MM_Time[0][12].values = new Array(1);
+    document.MM_Time[0][12].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][12].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][12].values[0].prop2 = "style";
+    document.MM_Time[0][13] = new String("sprite");
+    document.MM_Time[0][13].slot = 1;
+    if (ns)
+        document.MM_Time[0][13].obj = document["finale"] ? document["finale"].document["wannahave"] : document["wannahave"];
+    else
+        document.MM_Time[0][13].obj = document.all ? document.all["wannahave"] : null;
+    document.MM_Time[0][13].keyFrames = new Array(205, 214);
+    document.MM_Time[0][13].values = new Array(1);
+    document.MM_Time[0][13].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][13].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][13].values[0].prop2 = "style";
+    document.MM_Time[0][14] = new String("sprite");
+    document.MM_Time[0][14].slot = 1;
+    if (ns)
+        document.MM_Time[0][14].obj = document["finale"] ? document["finale"].document["visit"] : document["visit"];
+    else
+        document.MM_Time[0][14].obj = document.all ? document.all["visit"] : null;
+    document.MM_Time[0][14].keyFrames = new Array(215, 224);
+    document.MM_Time[0][14].values = new Array(1);
+    document.MM_Time[0][14].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][14].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][14].values[0].prop2 = "style";
+    document.MM_Time[0][15] = new String("sprite");
+    document.MM_Time[0][15].slot = 1;
+    if (ns)
+        document.MM_Time[0][15].obj = document["finale"] ? document["finale"].document["mehul"] : document["mehul"];
+    else
+        document.MM_Time[0][15].obj = document.all ? document.all["mehul"] : null;
+    document.MM_Time[0][15].keyFrames = new Array(225, 234);
+    document.MM_Time[0][15].values = new Array(1);
+    document.MM_Time[0][15].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][15].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][15].values[0].prop2 = "style";
+    document.MM_Time[0][16] = new String("sprite");
+    document.MM_Time[0][16].slot = 1;
+    if (ns)
+        document.MM_Time[0][16].obj = document["finale"] ? document["finale"].document["varuninfo"] : document["varuninfo"];
+    else
+        document.MM_Time[0][16].obj = document.all ? document.all["varuninfo"] : null;
+    document.MM_Time[0][16].keyFrames = new Array(235, 244);
+    document.MM_Time[0][16].values = new Array(1);
+    document.MM_Time[0][16].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][16].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][16].values[0].prop2 = "style";
+    document.MM_Time[0][17] = new String("sprite");
+    document.MM_Time[0][17].slot = 1;
+    if (ns)
+        document.MM_Time[0][17].obj = document["finale"] ? document["finale"].document["bye"] : document["bye"];
+    else
+        document.MM_Time[0][17].obj = document.all ? document.all["bye"] : null;
+    document.MM_Time[0][17].keyFrames = new Array(245, 254);
+    document.MM_Time[0][17].values = new Array(1);
+    document.MM_Time[0][17].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][17].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][17].values[0].prop2 = "style";
+    document.MM_Time[0][18] = new String("sprite");
+    document.MM_Time[0][18].slot = 1;
+    if (ns)
+        document.MM_Time[0][18].obj = document["finale"] ? document["finale"].document["seeya"] : document["seeya"];
+    else
+        document.MM_Time[0][18].obj = document.all ? document.all["seeya"] : null;
+    document.MM_Time[0][18].keyFrames = new Array(255, 264);
+    document.MM_Time[0][18].values = new Array(1);
+    document.MM_Time[0][18].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][18].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][18].values[0].prop2 = "style";
+    document.MM_Time[0][19] = new String("sprite");
+    document.MM_Time[0][19].slot = 1;
+    if (ns)
+        document.MM_Time[0][19].obj = document["finale"] ? document["finale"].document["prettysoon"] : document["prettysoon"];
+    else
+        document.MM_Time[0][19].obj = document.all ? document.all["prettysoon"] : null;
+    document.MM_Time[0][19].keyFrames = new Array(265, 274);
+    document.MM_Time[0][19].values = new Array(1);
+    document.MM_Time[0][19].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][19].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][19].values[0].prop2 = "style";
+    document.MM_Time[0][20] = new String("sprite");
+    document.MM_Time[0][20].slot = 1;
+    if (ns)
+        document.MM_Time[0][20].obj = document["finale"] ? document["finale"].document["back"] : document["back"];
+    else
+        document.MM_Time[0][20].obj = document.all ? document.all["back"] : null;
+    document.MM_Time[0][20].keyFrames = new Array(275, 284);
+    document.MM_Time[0][20].values = new Array(1);
+    document.MM_Time[0][20].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][20].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][20].values[0].prop2 = "style";
+    document.MM_Time[0][21] = new String("sprite");
+    document.MM_Time[0][21].slot = 1;
+    if (ns)
+        document.MM_Time[0][21].obj = document["finale"] ? document["finale"].document["closewindow"] : document["closewindow"];
+    else
+        document.MM_Time[0][21].obj = document.all ? document.all["closewindow"] : null;
+    document.MM_Time[0][21].keyFrames = new Array(285, 294);
+    document.MM_Time[0][21].values = new Array(1);
+    document.MM_Time[0][21].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][21].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][21].values[0].prop2 = "style";
+    document.MM_Time[0].lastFrame = 294;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#666666" link="navy" vlink="navy" alink="navy" onLoad="MM_timelinePlay('Timeline1')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF"  >
+  <tr> 
+    <td> 
+      <div align="center"><img src="varunmehta.gif" width="350" height="20"></div>
+    </td>
+  </tr>
+</table>
+&nbsp; <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#999999">&copy;varunmehta 
+2000-2001</font> 
+<div id="chess" style="position:absolute; width:688px; height:442px; z-index:1; left: 11px; top: 65px; visibility: visible"> 
+  <div align="center"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">Chess</font>
+    <div id="board" style="position:absolute; width:627px; height:382px; z-index:2; left: 19px; top: 50px"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td> 
+            <div id="blackpond" style="position:absolute; width:45px; height:17px; z-index:2; left: 338px; top: 82px"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">POND</font></b></div>
+            <div id="whitepond1" style="position:absolute; width:44px; height:15px; z-index:2; left: 486px; top: 299px"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#FFFFFF">POND</font></b></font></div>
+            <div id="whitwpond2" style="position:absolute; width:44px; height:15px; z-index:2; left: 418px; top: 300px"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b><font color="#FFFFFF">POND</font></b></font></div>
+            <div id="blackqueen" style="position:absolute; width:35px; height:11px; z-index:2; left: 272px; top: 29px"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>QUEEN</b></font></div>
+            <div id="checkmate" style="position:absolute; width:415px; height:33px; z-index:2; left: 97px; top: 160px; background-color: #666666; layer-background-color: #666666; border: 1px none #000000; visibility: hidden"> 
+              <div align="center"><font size="5" face="Verdana, Arial, Helvetica, sans-serif"> 
+                <font color="#FFFFFF">M a t e ! !</font></font></div>
+            </div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">A</font></b></div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">B</font></b></div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">C</font></b></div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">D</font></b></div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">E</font></b></div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">F</font></b></div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">G</font></b></div>
+          </td>
+          <td height="5%" valign="top" align="center"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">H</font></b></div>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">8</font></b></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">ROOK</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">KNIGHT</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">BISHOP</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000" size="2" face="Verdana, Arial, Helvetica, sans-serif"></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">KING</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">BISHOP</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">KNIGHT</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">ROOK</font></b></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>8</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">7</font></b></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#000000"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>7</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">6</font></b></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>6</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">5</font></b></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>5</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">4</font></b></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>4</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">3</font></b></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font size="2"><font face="Verdana, Arial, Helvetica, sans-serif"><font face="Verdana, Arial, Helvetica, sans-serif"><b></b></font></font></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>3</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">2</font></b></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">POND</font></b></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>2</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="5%" align="center" valign="middle"> 
+            <div align="center"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">1</font></b></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">ROOK</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">KNIGHT</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">BISHOP</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">QUEEN</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">KING</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">BISHOP</font></b></font></div>
+          </td>
+          <td bgcolor="#999999" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">KNIGHT</font></b></font></div>
+          </td>
+          <td bgcolor="#CCCCCC" width="12%" height="12%"> 
+            <div align="center"><font color="#FFFFFF"><b><font size="2" face="Verdana, Arial, Helvetica, sans-serif">ROOK</font></b></font></div>
+          </td>
+          <td width="5%" valign="middle" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>1</b></font></div>
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>A</b></font></div>
+          </td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>B</b></font></div>
+          </td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>C</b></font></div>
+          </td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>D</b></font></div>
+          </td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>E</b></font></div>
+          </td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>F</b></font></div>
+          </td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>G</b></font></div>
+          </td>
+          <td height="5%" valign="bottom" align="center"> 
+            <div align="center"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>H</b></font></div>
+          </td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div id="finale" style="position:absolute; width:729px; height:480px; z-index:2; left: 4px; top: 64px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000; visibility: hidden"> 
+  <div id="playing" style="position:absolute; width:151px; height:14px; z-index:1; left: 15px; top: 11px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Playing 
+    the fools game</font></div>
+  <div id="foolsgame" style="position:absolute; width:222px; height:15px; z-index:2; left: 15px; top: 28px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Well 
+    this is the<b> fools</b> game in chess.</font></div>
+  <div id="four" style="position:absolute; width:270px; height:17px; z-index:3; left: 15px; top: 44px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Where 
+    you loose the game in four moves </font></div>
+  <div id="thatsall" style="position:absolute; width:135px; height:14px; z-index:4; left: 15px; top: 89px; visibility: hidden"><b><font size="2" face="Arial, Helvetica, sans-serif">That's 
+    all folks </font></b></div>
+  <div id="foryouguys" style="position:absolute; width:170px; height:15px; z-index:5; left: 15px; top: 106px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">it's 
+    all I had for you guys.</font></div>
+  <div id="enjoyed" style="position:absolute; width:210px; height:15px; z-index:6; left: 15px; top: 123px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">I 
+    hope you guys enjoyed the site.</font></div>
+  <div id="mailsme" style="position:absolute; width:252px; height:16px; z-index:7; left: 15px; top: 140px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Do<b> 
+    <a href="mailto:bambambhole@hotmail.com">mail me</a></b> your opinions about 
+    the site.</font></div>
+  <div id="wannahave" style="position:absolute; width:198px; height:13px; z-index:8; left: 15px; top: 170px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Wanna 
+    have some more fun </font></div>
+  <div id="visit" style="position:absolute; width:247px; height:13px; z-index:9; left: 15px; top: 187px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Then 
+    you can visit some of my friends </font></div>
+  <div id="mehul" style="position:absolute; width:329px; height:18px; z-index:10; left: 15px; top: 204px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.mehul.cjb.net"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">:: 
+    h t t p : / / w w w . m e h u l . c j b . n e t :: </font></a></font></div>  
+  <div id="varuninfo" style="position:absolute; width:330px; height:17px; z-index:11; left: 15px; top: 221px; visibility: hidden"><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="http://www.varuninfo.cjb.net" target="_blank">:: 
+    h t t p : / / w w w . v a r u n i n f o . c j b . n e t :: </a></font></div>
+  <div id="bye" style="position:absolute; width:129px; height:15px; z-index:12; left: 15px; top: 261px; visibility: hidden"><font face="Arial, Helvetica, sans-serif" size="2">Bye 
+    for now.</font></div>
+  <div id="seeya" style="position:absolute; width:113px; height:18px; z-index:13; left: 15px; top: 278px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">See 
+    ya soon</font></div>
+  <div id="prettysoon" style="position:absolute; width:174px; height:17px; z-index:14; left: 15px; top: 297px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Pretty 
+    soon ...</font></div>
+  <div id="back" style="position:absolute; width:199px; height:53px; z-index:15; left: 232px; top: 329px; visibility: hidden"> 
+    <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="5">Bye<br>
+      I'll be back !!</font></b></div>
+  </div>
+  <div id="closewindow" style="position:absolute; width:255px; height:13px; z-index:16; left: 447px; top: 380px; visibility: hidden"> 
+    <div align="center"><a href="javascript:window.close();"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">:: 
+      c l o s e w i n d o w ::</font></a></div>
+  </div>
+</div>
+</body>
+</html>

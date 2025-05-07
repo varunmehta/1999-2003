@@ -1,0 +1,11 @@
+body {  color: #666666; background-color: #FFFFFF; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; cursor: default}
+a {  color: #666666; text-decoration: none}
+a:hover {  color: #000000; text-decoration: underline}
+.Tahoma8 {  font-family: Tahoma; font-size: 8pt}
+.Tahoma14 {  font-family: Tahoma; font-size: 14pt}
+.Verdana8 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt}
+.Verdana9 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt}
+.Verdana14 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14pt}
+.Tahoma5 {  font-family: Tahoma; font-size: 5pt}
+.Arrows {  font-family: Wingdings; font-size: 9pt}
+.TahomaBg {  font-family: Tahoma; font-size: 20pt; color: #CCCCCC}

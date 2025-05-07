@@ -1,0 +1,8 @@
+.Arial9 {  font-family: Arial, Helvetica, sans-serif; font-size: 9pt}
+a {  color: #FFFFFF; text-decoration: none}
+a:hover {  color: #000000; text-decoration: underline}
+.Verdana9 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt}
+.Verdana8 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt}
+input {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; background-color: #FFFFFF; border: 1px #000000 solid}
+textarea {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000; background-color: #FFFFFF; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+select {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}

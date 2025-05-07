@@ -1,0 +1,1017 @@
+<html>
+<head>
+<title>Varun Mehta : Games</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_timelinePlay(tmLnName, myID) { //v1.2
+  //Copyright 1997 Macromedia, Inc. All rights reserved.
+  var i,j,tmLn,props,keyFrm,sprite,numKeyFr,firstKeyFr,propNum,theObj,firstTime=false;
+  if (document.MM_Time == null) MM_initTimelines(); //if *very* 1st time
+  tmLn = document.MM_Time[tmLnName];
+  if (myID == null) { myID = ++tmLn.ID; firstTime=true;}//if new call, incr ID
+  if (myID == tmLn.ID) { //if Im newest
+    setTimeout('MM_timelinePlay("'+tmLnName+'",'+myID+')',tmLn.delay);
+    fNew = ++tmLn.curFrame;
+    for (i=0; i<tmLn.length; i++) {
+      sprite = tmLn[i];
+      if (sprite.charAt(0) == 's') {
+        if (sprite.obj) {
+          numKeyFr = sprite.keyFrames.length; firstKeyFr = sprite.keyFrames[0];
+          if (fNew >= firstKeyFr && fNew <= sprite.keyFrames[numKeyFr-1]) {//in range
+            keyFrm=1;
+            for (j=0; j<sprite.values.length; j++) {
+              props = sprite.values[j]; 
+              if (numKeyFr != props.length) {
+                if (props.prop2 == null) sprite.obj[props.prop] = props[fNew-firstKeyFr];
+                else        sprite.obj[props.prop2][props.prop] = props[fNew-firstKeyFr];
+              } else {
+                while (keyFrm<numKeyFr && fNew>=sprite.keyFrames[keyFrm]) keyFrm++;
+                if (firstTime || fNew==sprite.keyFrames[keyFrm-1]) {
+                  if (props.prop2 == null) sprite.obj[props.prop] = props[keyFrm-1];
+                  else        sprite.obj[props.prop2][props.prop] = props[keyFrm-1];
+        } } } } }
+      } else if (sprite.charAt(0)=='b' && fNew == sprite.frame) eval(sprite.value);
+      if (fNew > tmLn.lastFrame) tmLn.ID = 0;
+  } }
+}
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+
+function MM_initTimelines() {
+    //MM_initTimelines() Copyright 1997 Macromedia, Inc. All rights reserved.
+    var ns = navigator.appName == "Netscape";
+    document.MM_Time = new Array(1);
+    document.MM_Time[0] = new Array(57);
+    document.MM_Time["Timeline1"] = document.MM_Time[0];
+    document.MM_Time[0].MM_Name = "Timeline1";
+    document.MM_Time[0].fps = 15;
+    document.MM_Time[0][0] = new String("sprite");
+    document.MM_Time[0][0].slot = 1;
+    if (ns)
+        document.MM_Time[0][0].obj = document["pingpong"] ? document["pingpong"].document["left"] : document["left"];
+    else
+        document.MM_Time[0][0].obj = document.all ? document.all["left"] : null;
+    document.MM_Time[0][0].keyFrames = new Array(10, 19);
+    document.MM_Time[0][0].values = new Array(2);
+    document.MM_Time[0][0].values[0] = new Array(50,50,50,50,50,50,50,50,50,50);
+    document.MM_Time[0][0].values[0].prop = "left";
+    document.MM_Time[0][0].values[1] = new Array(-232,-192,-152,-111,-71,-31,9,50,90,130);
+    document.MM_Time[0][0].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][0].values[0].prop2 = "style";
+        document.MM_Time[0][0].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][1] = new String("sprite");
+    document.MM_Time[0][1].slot = 2;
+    if (ns)
+        document.MM_Time[0][1].obj = document["pingpong"] ? document["pingpong"].document["right"] : document["right"];
+    else
+        document.MM_Time[0][1].obj = document.all ? document.all["right"] : null;
+    document.MM_Time[0][1].keyFrames = new Array(10, 19);
+    document.MM_Time[0][1].values = new Array(2);
+    document.MM_Time[0][1].values[0] = new Array(600,600,600,600,600,600,600,600,600,600);
+    document.MM_Time[0][1].values[0].prop = "left";
+    document.MM_Time[0][1].values[1] = new Array(686,624,562,501,439,377,315,254,192,130);
+    document.MM_Time[0][1].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][1].values[0].prop2 = "style";
+        document.MM_Time[0][1].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][2] = new String("sprite");
+    document.MM_Time[0][2].slot = 1;
+    if (ns)
+        document.MM_Time[0][2].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][2].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][2].keyFrames = new Array(36, 39, 50);
+    document.MM_Time[0][2].values = new Array(3);
+    document.MM_Time[0][2].values[0] = new Array("hidden","visible","visible");
+    document.MM_Time[0][2].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][2].values[0].prop2 = "style";
+    document.MM_Time[0][2].values[1] = new Array(322,322,322,322,322,322,322,322,322,322,322,322,322,322,322);
+    document.MM_Time[0][2].values[1].prop = "left";
+    document.MM_Time[0][2].values[2] = new Array(183,183,183,183,183,183,183,183,183,183,183,183,183,183,183);
+    document.MM_Time[0][2].values[2].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][2].values[1].prop2 = "style";
+        document.MM_Time[0][2].values[2].prop2 = "style";
+    }
+    document.MM_Time[0][3] = new String("sprite");
+    document.MM_Time[0][3].slot = 1;
+    if (ns)
+        document.MM_Time[0][3].obj = document["pingpong"] ? document["pingpong"].document["start"] : document["start"];
+    else
+        document.MM_Time[0][3].obj = document.all ? document.all["start"] : null;
+    document.MM_Time[0][3].keyFrames = new Array(22, 24, 35);
+    document.MM_Time[0][3].values = new Array(1);
+    document.MM_Time[0][3].values[0] = new Array("hidden","visible","hidden");
+    document.MM_Time[0][3].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][3].values[0].prop2 = "style";
+    document.MM_Time[0][4] = new String("sprite");
+    document.MM_Time[0][4].slot = 1;
+    if (ns)
+        document.MM_Time[0][4].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][4].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][4].keyFrames = new Array(51, 65);
+    document.MM_Time[0][4].values = new Array(3);
+    document.MM_Time[0][4].values[0] = new Array(322,303,284,265,246,227,208,189,170,151,132,113,94,75,56);
+    document.MM_Time[0][4].values[0].prop = "left";
+    document.MM_Time[0][4].values[1] = new Array(183,177,171,165,159,153,147,142,136,130,124,118,112,106,100);
+    document.MM_Time[0][4].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][4].values[0].prop2 = "style";
+        document.MM_Time[0][4].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][4].values[2] = new Array("visible","visible");
+    document.MM_Time[0][4].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][4].values[2].prop2 = "style";
+    document.MM_Time[0][5] = new String("sprite");
+    document.MM_Time[0][5].slot = 2;
+    if (ns)
+        document.MM_Time[0][5].obj = document["pingpong"] ? document["pingpong"].document["left"] : document["left"];
+    else
+        document.MM_Time[0][5].obj = document.all ? document.all["left"] : null;
+    document.MM_Time[0][5].keyFrames = new Array(51, 65);
+    document.MM_Time[0][5].values = new Array(2);
+    document.MM_Time[0][5].values[0] = new Array(50,50,50,50,50,50,50,50,50,50,50,50,50,50,50);
+    document.MM_Time[0][5].values[0].prop = "left";
+    document.MM_Time[0][5].values[1] = new Array(130,127,125,122,119,116,114,111,108,106,103,100,97,95,92);
+    document.MM_Time[0][5].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][5].values[0].prop2 = "style";
+        document.MM_Time[0][5].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][6] = new String("sprite");
+    document.MM_Time[0][6].slot = 1;
+    if (ns)
+        document.MM_Time[0][6].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][6].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][6].keyFrames = new Array(66, 80);
+    document.MM_Time[0][6].values = new Array(3);
+    document.MM_Time[0][6].values[0] = new Array(56,93,130,167,204,241,278,315,353,390,427,464,501,538,575);
+    document.MM_Time[0][6].values[0].prop = "left";
+    document.MM_Time[0][6].values[1] = new Array(100,114,129,143,157,172,186,200,215,229,244,258,272,287,301);
+    document.MM_Time[0][6].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][6].values[0].prop2 = "style";
+        document.MM_Time[0][6].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][6].values[2] = new Array("visible","visible");
+    document.MM_Time[0][6].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][6].values[2].prop2 = "style";
+    document.MM_Time[0][7] = new String("sprite");
+    document.MM_Time[0][7].slot = 1;
+    if (ns)
+        document.MM_Time[0][7].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][7].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][7].keyFrames = new Array(81, 95);
+    document.MM_Time[0][7].values = new Array(3);
+    document.MM_Time[0][7].values[0] = new Array(575,538,501,464,428,391,354,317,280,243,206,170,133,96,59);
+    document.MM_Time[0][7].values[0].prop = "left";
+    document.MM_Time[0][7].values[1] = new Array(301,297,292,288,283,279,274,270,266,261,257,252,248,243,239);
+    document.MM_Time[0][7].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][7].values[0].prop2 = "style";
+        document.MM_Time[0][7].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][7].values[2] = new Array("visible","visible");
+    document.MM_Time[0][7].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][7].values[2].prop2 = "style";
+    document.MM_Time[0][8] = new String("sprite");
+    document.MM_Time[0][8].slot = 1;
+    if (ns)
+        document.MM_Time[0][8].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][8].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][8].keyFrames = new Array(96, 106);
+    document.MM_Time[0][8].values = new Array(3);
+    document.MM_Time[0][8].values[0] = new Array(59,81,104,126,148,171,193,215,237,260,282);
+    document.MM_Time[0][8].values[0].prop = "left";
+    document.MM_Time[0][8].values[1] = new Array(239,220,201,182,163,144,124,105,86,67,48);
+    document.MM_Time[0][8].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][8].values[0].prop2 = "style";
+        document.MM_Time[0][8].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][8].values[2] = new Array("visible","visible");
+    document.MM_Time[0][8].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][8].values[2].prop2 = "style";
+    document.MM_Time[0][9] = new String("sprite");
+    document.MM_Time[0][9].slot = 1;
+    if (ns)
+        document.MM_Time[0][9].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][9].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][9].keyFrames = new Array(107, 115);
+    document.MM_Time[0][9].values = new Array(3);
+    document.MM_Time[0][9].values[0] = new Array(282,318,355,391,427,464,500,537,573);
+    document.MM_Time[0][9].values[0].prop = "left";
+    document.MM_Time[0][9].values[1] = new Array(48,55,62,69,76,82,89,96,103);
+    document.MM_Time[0][9].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][9].values[0].prop2 = "style";
+        document.MM_Time[0][9].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][9].values[2] = new Array("visible","visible");
+    document.MM_Time[0][9].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][9].values[2].prop2 = "style";
+    document.MM_Time[0][10] = new String("sprite");
+    document.MM_Time[0][10].slot = 2;
+    if (ns)
+        document.MM_Time[0][10].obj = document["pingpong"] ? document["pingpong"].document["right"] : document["right"];
+    else
+        document.MM_Time[0][10].obj = document.all ? document.all["right"] : null;
+    document.MM_Time[0][10].keyFrames = new Array(101, 115);
+    document.MM_Time[0][10].values = new Array(2);
+    document.MM_Time[0][10].values[0] = new Array(600,600,600,600,600,600,600,601,601,601,601,601,601,601,601);
+    document.MM_Time[0][10].values[0].prop = "left";
+    document.MM_Time[0][10].values[1] = new Array(200,190,180,170,160,150,140,130,120,110,100,90,80,70,60);
+    document.MM_Time[0][10].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][10].values[0].prop2 = "style";
+        document.MM_Time[0][10].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][11] = new String("sprite");
+    document.MM_Time[0][11].slot = 2;
+    if (ns)
+        document.MM_Time[0][11].obj = document["pingpong"] ? document["pingpong"].document["right"] : document["right"];
+    else
+        document.MM_Time[0][11].obj = document.all ? document.all["right"] : null;
+    document.MM_Time[0][11].keyFrames = new Array(66, 80);
+    document.MM_Time[0][11].values = new Array(2);
+    document.MM_Time[0][11].values[0] = new Array(600,600,600,600,600,600,600,600,600,600,600,600,600,600,600);
+    document.MM_Time[0][11].values[0].prop = "left";
+    document.MM_Time[0][11].values[1] = new Array(130,135,140,145,150,155,160,166,171,176,181,186,191,196,201);
+    document.MM_Time[0][11].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][11].values[0].prop2 = "style";
+        document.MM_Time[0][11].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][12] = new String("sprite");
+    document.MM_Time[0][12].slot = 2;
+    if (ns)
+        document.MM_Time[0][12].obj = document["pingpong"] ? document["pingpong"].document["left"] : document["left"];
+    else
+        document.MM_Time[0][12].obj = document.all ? document.all["left"] : null;
+    document.MM_Time[0][12].keyFrames = new Array(81, 95);
+    document.MM_Time[0][12].values = new Array(2);
+    document.MM_Time[0][12].values[0] = new Array(50,50,50,50,50,50,50,50,50,50,50,50,50,50,50);
+    document.MM_Time[0][12].values[0].prop = "left";
+    document.MM_Time[0][12].values[1] = new Array(92,100,107,115,123,130,138,146,153,161,168,176,184,191,199);
+    document.MM_Time[0][12].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][12].values[0].prop2 = "style";
+        document.MM_Time[0][12].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][13] = new String("sprite");
+    document.MM_Time[0][13].slot = 1;
+    if (ns)
+        document.MM_Time[0][13].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][13].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][13].keyFrames = new Array(116, 130);
+    document.MM_Time[0][13].values = new Array(3);
+    document.MM_Time[0][13].values[0] = new Array(573,536,499,462,425,388,351,314,277,240,203,166,129,92,55);
+    document.MM_Time[0][13].values[0].prop = "left";
+    document.MM_Time[0][13].values[1] = new Array(103,106,108,111,113,116,118,121,124,126,129,131,134,136,139);
+    document.MM_Time[0][13].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][13].values[0].prop2 = "style";
+        document.MM_Time[0][13].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][13].values[2] = new Array("visible","visible");
+    document.MM_Time[0][13].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][13].values[2].prop2 = "style";
+    document.MM_Time[0][14] = new String("sprite");
+    document.MM_Time[0][14].slot = 2;
+    if (ns)
+        document.MM_Time[0][14].obj = document["pingpong"] ? document["pingpong"].document["left"] : document["left"];
+    else
+        document.MM_Time[0][14].obj = document.all ? document.all["left"] : null;
+    document.MM_Time[0][14].keyFrames = new Array(116, 130);
+    document.MM_Time[0][14].values = new Array(2);
+    document.MM_Time[0][14].values[0] = new Array(50,50,50,50,50,50,50,50,50,50,50,50,50,50,50);
+    document.MM_Time[0][14].values[0].prop = "left";
+    document.MM_Time[0][14].values[1] = new Array(199,190,182,173,164,156,147,139,130,121,113,104,95,87,78);
+    document.MM_Time[0][14].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][14].values[0].prop2 = "style";
+        document.MM_Time[0][14].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][15] = new String("sprite");
+    document.MM_Time[0][15].slot = 3;
+    if (ns)
+        document.MM_Time[0][15].obj = document["pingpong"] ? document["pingpong"].document["boring"] : document["boring"];
+    else
+        document.MM_Time[0][15].obj = document.all ? document.all["boring"] : null;
+    document.MM_Time[0][15].keyFrames = new Array(116, 117, 130);
+    document.MM_Time[0][15].values = new Array(1);
+    document.MM_Time[0][15].values[0] = new Array("hidden","visible","hidden");
+    document.MM_Time[0][15].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][15].values[0].prop2 = "style";
+    document.MM_Time[0][16] = new String("sprite");
+    document.MM_Time[0][16].slot = 1;
+    if (ns)
+        document.MM_Time[0][16].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][16].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][16].keyFrames = new Array(131, 138);
+    document.MM_Time[0][16].values = new Array(3);
+    document.MM_Time[0][16].values[0] = new Array(55,91,126,162,198,234,269,305);
+    document.MM_Time[0][16].values[0].prop = "left";
+    document.MM_Time[0][16].values[1] = new Array(139,164,189,214,239,264,289,314);
+    document.MM_Time[0][16].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][16].values[0].prop2 = "style";
+        document.MM_Time[0][16].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][16].values[2] = new Array("visible","visible");
+    document.MM_Time[0][16].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][16].values[2].prop2 = "style";
+    document.MM_Time[0][17] = new String("sprite");
+    document.MM_Time[0][17].slot = 1;
+    if (ns)
+        document.MM_Time[0][17].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][17].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][17].keyFrames = new Array(139, 143);
+    document.MM_Time[0][17].values = new Array(3);
+    document.MM_Time[0][17].values[0] = new Array(305,373,440,508,575);
+    document.MM_Time[0][17].values[0].prop = "left";
+    document.MM_Time[0][17].values[1] = new Array(314,290,265,241,216);
+    document.MM_Time[0][17].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][17].values[0].prop2 = "style";
+        document.MM_Time[0][17].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][17].values[2] = new Array("visible","visible");
+    document.MM_Time[0][17].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][17].values[2].prop2 = "style";
+    document.MM_Time[0][18] = new String("sprite");
+    document.MM_Time[0][18].slot = 2;
+    if (ns)
+        document.MM_Time[0][18].obj = document["pingpong"] ? document["pingpong"].document["right"] : document["right"];
+    else
+        document.MM_Time[0][18].obj = document.all ? document.all["right"] : null;
+    document.MM_Time[0][18].keyFrames = new Array(131, 143);
+    document.MM_Time[0][18].values = new Array(2);
+    document.MM_Time[0][18].values[0] = new Array(602,602,602,602,602,602,602,602,602,602,602,602,602);
+    document.MM_Time[0][18].values[0].prop = "left";
+    document.MM_Time[0][18].values[1] = new Array(56,63,71,78,85,93,100,107,115,122,129,137,144);
+    document.MM_Time[0][18].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][18].values[0].prop2 = "style";
+        document.MM_Time[0][18].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][19] = new String("sprite");
+    document.MM_Time[0][19].slot = 1;
+    if (ns)
+        document.MM_Time[0][19].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][19].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][19].keyFrames = new Array(144, 151);
+    document.MM_Time[0][19].values = new Array(3);
+    document.MM_Time[0][19].values[0] = new Array(575,542,509,476,444,411,378,345);
+    document.MM_Time[0][19].values[0].prop = "left";
+    document.MM_Time[0][19].values[1] = new Array(216,192,168,144,120,96,72,48);
+    document.MM_Time[0][19].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][19].values[0].prop2 = "style";
+        document.MM_Time[0][19].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][19].values[2] = new Array("visible","visible");
+    document.MM_Time[0][19].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][19].values[2].prop2 = "style";
+    document.MM_Time[0][20] = new String("sprite");
+    document.MM_Time[0][20].slot = 1;
+    if (ns)
+        document.MM_Time[0][20].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][20].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][20].keyFrames = new Array(152, 158);
+    document.MM_Time[0][20].values = new Array(3);
+    document.MM_Time[0][20].values[0] = new Array(345,297,249,201,152,104,56);
+    document.MM_Time[0][20].values[0].prop = "left";
+    document.MM_Time[0][20].values[1] = new Array(48,92,136,181,225,269,313);
+    document.MM_Time[0][20].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][20].values[0].prop2 = "style";
+        document.MM_Time[0][20].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][20].values[2] = new Array("visible","visible");
+    document.MM_Time[0][20].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][20].values[2].prop2 = "style";
+    document.MM_Time[0][21] = new String("sprite");
+    document.MM_Time[0][21].slot = 2;
+    if (ns)
+        document.MM_Time[0][21].obj = document["pingpong"] ? document["pingpong"].document["left"] : document["left"];
+    else
+        document.MM_Time[0][21].obj = document.all ? document.all["left"] : null;
+    document.MM_Time[0][21].keyFrames = new Array(144, 158);
+    document.MM_Time[0][21].values = new Array(2);
+    document.MM_Time[0][21].values[0] = new Array(50,50,50,50,50,50,50,50,50,50,50,50,50,50,50);
+    document.MM_Time[0][21].values[0].prop = "left";
+    document.MM_Time[0][21].values[1] = new Array(78,87,96,105,113,122,131,140,149,158,167,175,184,193,202);
+    document.MM_Time[0][21].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][21].values[0].prop2 = "style";
+        document.MM_Time[0][21].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][22] = new String("sprite");
+    document.MM_Time[0][22].slot = 1;
+    if (ns)
+        document.MM_Time[0][22].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][22].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][22].keyFrames = new Array(159, 166);
+    document.MM_Time[0][22].values = new Array(3);
+    document.MM_Time[0][22].values[0] = new Array(56,130,205,279,354,428,503,577);
+    document.MM_Time[0][22].values[0].prop = "left";
+    document.MM_Time[0][22].values[1] = new Array(313,276,239,202,165,128,91,54);
+    document.MM_Time[0][22].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][22].values[0].prop2 = "style";
+        document.MM_Time[0][22].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][22].values[2] = new Array("visible","visible");
+    document.MM_Time[0][22].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][22].values[2].prop2 = "style";
+    document.MM_Time[0][23] = new String("sprite");
+    document.MM_Time[0][23].slot = 2;
+    if (ns)
+        document.MM_Time[0][23].obj = document["pingpong"] ? document["pingpong"].document["right"] : document["right"];
+    else
+        document.MM_Time[0][23].obj = document.all ? document.all["right"] : null;
+    document.MM_Time[0][23].keyFrames = new Array(159, 166);
+    document.MM_Time[0][23].values = new Array(2);
+    document.MM_Time[0][23].values[0] = new Array(602,602,602,602,602,602,602,602);
+    document.MM_Time[0][23].values[0].prop = "left";
+    document.MM_Time[0][23].values[1] = new Array(144,131,117,104,91,78,64,51);
+    document.MM_Time[0][23].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][23].values[0].prop2 = "style";
+        document.MM_Time[0][23].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][24] = new String("sprite");
+    document.MM_Time[0][24].slot = 3;
+    if (ns)
+        document.MM_Time[0][24].obj = document["pingpong"] ? document["pingpong"].document["boring"] : document["boring"];
+    else
+        document.MM_Time[0][24].obj = document.all ? document.all["boring"] : null;
+    document.MM_Time[0][24].keyFrames = new Array(170, 171, 185);
+    document.MM_Time[0][24].values = new Array(1);
+    document.MM_Time[0][24].values[0] = new Array("hidden","visible","hidden");
+    document.MM_Time[0][24].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][24].values[0].prop2 = "style";
+    document.MM_Time[0][25] = new String("sprite");
+    document.MM_Time[0][25].slot = 1;
+    if (ns)
+        document.MM_Time[0][25].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][25].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][25].keyFrames = new Array(167, 176);
+    document.MM_Time[0][25].values = new Array(3);
+    document.MM_Time[0][25].values[0] = new Array(577,519,462,404,346,289,231,173,116,58);
+    document.MM_Time[0][25].values[0].prop = "left";
+    document.MM_Time[0][25].values[1] = new Array(54,61,69,76,84,91,99,106,114,121);
+    document.MM_Time[0][25].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][25].values[0].prop2 = "style";
+        document.MM_Time[0][25].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][25].values[2] = new Array("visible","visible");
+    document.MM_Time[0][25].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][25].values[2].prop2 = "style";
+    document.MM_Time[0][26] = new String("sprite");
+    document.MM_Time[0][26].slot = 2;
+    if (ns)
+        document.MM_Time[0][26].obj = document["pingpong"] ? document["pingpong"].document["left"] : document["left"];
+    else
+        document.MM_Time[0][26].obj = document.all ? document.all["left"] : null;
+    document.MM_Time[0][26].keyFrames = new Array(167, 176);
+    document.MM_Time[0][26].values = new Array(2);
+    document.MM_Time[0][26].values[0] = new Array(50,50,50,50,50,51,51,51,51,51);
+    document.MM_Time[0][26].values[0].prop = "left";
+    document.MM_Time[0][26].values[1] = new Array(202,190,177,165,153,140,128,116,103,91);
+    document.MM_Time[0][26].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][26].values[0].prop2 = "style";
+        document.MM_Time[0][26].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][27] = new String("sprite");
+    document.MM_Time[0][27].slot = 1;
+    if (ns)
+        document.MM_Time[0][27].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][27].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][27].keyFrames = new Array(177, 185);
+    document.MM_Time[0][27].values = new Array(3);
+    document.MM_Time[0][27].values[0] = new Array(58,123,187,252,317,382,447,511,576);
+    document.MM_Time[0][27].values[0].prop = "left";
+    document.MM_Time[0][27].values[1] = new Array(121,140,160,179,198,218,237,257,276);
+    document.MM_Time[0][27].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][27].values[0].prop2 = "style";
+        document.MM_Time[0][27].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][27].values[2] = new Array("visible","visible");
+    document.MM_Time[0][27].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][27].values[2].prop2 = "style";
+    document.MM_Time[0][28] = new String("sprite");
+    document.MM_Time[0][28].slot = 2;
+    if (ns)
+        document.MM_Time[0][28].obj = document["pingpong"] ? document["pingpong"].document["right"] : document["right"];
+    else
+        document.MM_Time[0][28].obj = document.all ? document.all["right"] : null;
+    document.MM_Time[0][28].keyFrames = new Array(177, 185);
+    document.MM_Time[0][28].values = new Array(2);
+    document.MM_Time[0][28].values[0] = new Array(602,602,602,602,602,602,602,602,602);
+    document.MM_Time[0][28].values[0].prop = "left";
+    document.MM_Time[0][28].values[1] = new Array(51,69,86,104,122,139,157,174,192);
+    document.MM_Time[0][28].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][28].values[0].prop2 = "style";
+        document.MM_Time[0][28].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][29] = new String("sprite");
+    document.MM_Time[0][29].slot = 1;
+    if (ns)
+        document.MM_Time[0][29].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][29].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][29].keyFrames = new Array(186, 195);
+    document.MM_Time[0][29].values = new Array(3);
+    document.MM_Time[0][29].values[0] = new Array(576,518,461,403,346,288,231,173,116,58);
+    document.MM_Time[0][29].values[0].prop = "left";
+    document.MM_Time[0][29].values[1] = new Array(276,268,260,252,244,237,229,221,213,205);
+    document.MM_Time[0][29].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][29].values[0].prop2 = "style";
+        document.MM_Time[0][29].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][29].values[2] = new Array("visible","visible");
+    document.MM_Time[0][29].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][29].values[2].prop2 = "style";
+    document.MM_Time[0][30] = new String("sprite");
+    document.MM_Time[0][30].slot = 2;
+    if (ns)
+        document.MM_Time[0][30].obj = document["pingpong"] ? document["pingpong"].document["left"] : document["left"];
+    else
+        document.MM_Time[0][30].obj = document.all ? document.all["left"] : null;
+    document.MM_Time[0][30].keyFrames = new Array(186, 195);
+    document.MM_Time[0][30].values = new Array(2);
+    document.MM_Time[0][30].values[0] = new Array(51,51,51,51,51,51,51,51,51,51);
+    document.MM_Time[0][30].values[0].prop = "left";
+    document.MM_Time[0][30].values[1] = new Array(91,99,107,116,124,132,140,149,157,165);
+    document.MM_Time[0][30].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][30].values[0].prop2 = "style";
+        document.MM_Time[0][30].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][31] = new String("sprite");
+    document.MM_Time[0][31].slot = 3;
+    if (ns)
+        document.MM_Time[0][31].obj = document["pingpong"] ? document["pingpong"].document["stop"] : document["stop"];
+    else
+        document.MM_Time[0][31].obj = document.all ? document.all["stop"] : null;
+    document.MM_Time[0][31].keyFrames = new Array(186, 188, 215);
+    document.MM_Time[0][31].values = new Array(1);
+    document.MM_Time[0][31].values[0] = new Array("hidden","visible","visible");
+    document.MM_Time[0][31].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][31].values[0].prop2 = "style";
+    document.MM_Time[0][32] = new String("sprite");
+    document.MM_Time[0][32].slot = 1;
+    if (ns)
+        document.MM_Time[0][32].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][32].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][32].keyFrames = new Array(196, 201);
+    document.MM_Time[0][32].values = new Array(3);
+    document.MM_Time[0][32].values[0] = new Array(58,92,126,161,195,229);
+    document.MM_Time[0][32].values[0].prop = "left";
+    document.MM_Time[0][32].values[1] = new Array(205,174,143,112,81,50);
+    document.MM_Time[0][32].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][32].values[0].prop2 = "style";
+        document.MM_Time[0][32].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][32].values[2] = new Array("visible","visible");
+    document.MM_Time[0][32].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][32].values[2].prop2 = "style";
+    document.MM_Time[0][33] = new String("sprite");
+    document.MM_Time[0][33].slot = 1;
+    if (ns)
+        document.MM_Time[0][33].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][33].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][33].keyFrames = new Array(202, 206);
+    document.MM_Time[0][33].values = new Array(3);
+    document.MM_Time[0][33].values[0] = new Array(229,261,294,326,358);
+    document.MM_Time[0][33].values[0].prop = "left";
+    document.MM_Time[0][33].values[1] = new Array(50,116,181,247,312);
+    document.MM_Time[0][33].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][33].values[0].prop2 = "style";
+        document.MM_Time[0][33].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][33].values[2] = new Array("visible","visible");
+    document.MM_Time[0][33].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][33].values[2].prop2 = "style";
+    document.MM_Time[0][34] = new String("sprite");
+    document.MM_Time[0][34].slot = 1;
+    if (ns)
+        document.MM_Time[0][34].obj = document["pingpong"] ? document["pingpong"].document["ball"] : document["ball"];
+    else
+        document.MM_Time[0][34].obj = document.all ? document.all["ball"] : null;
+    document.MM_Time[0][34].keyFrames = new Array(207, 211);
+    document.MM_Time[0][34].values = new Array(3);
+    document.MM_Time[0][34].values[0] = new Array(358,412,467,521,575);
+    document.MM_Time[0][34].values[0].prop = "left";
+    document.MM_Time[0][34].values[1] = new Array(312,249,185,122,58);
+    document.MM_Time[0][34].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][34].values[0].prop2 = "style";
+        document.MM_Time[0][34].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][34].values[2] = new Array("visible","visible");
+    document.MM_Time[0][34].values[2].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][34].values[2].prop2 = "style";
+    document.MM_Time[0][35] = new String("sprite");
+    document.MM_Time[0][35].slot = 2;
+    if (ns)
+        document.MM_Time[0][35].obj = document["pingpong"] ? document["pingpong"].document["right"] : document["right"];
+    else
+        document.MM_Time[0][35].obj = document.all ? document.all["right"] : null;
+    document.MM_Time[0][35].keyFrames = new Array(202, 211);
+    document.MM_Time[0][35].values = new Array(2);
+    document.MM_Time[0][35].values[0] = new Array(602,602,602,602,602,602,602,602,602,602);
+    document.MM_Time[0][35].values[0].prop = "left";
+    document.MM_Time[0][35].values[1] = new Array(192,176,161,145,130,114,99,83,68,52);
+    document.MM_Time[0][35].values[1].prop = "top";
+    if (!ns) {
+        document.MM_Time[0][35].values[0].prop2 = "style";
+        document.MM_Time[0][35].values[1].prop2 = "style";
+    }
+    document.MM_Time[0][36] = new String("sprite");
+    document.MM_Time[0][36].slot = 1;
+    if (ns)
+        document.MM_Time[0][36].obj = document["dumb"];
+    else
+        document.MM_Time[0][36].obj = document.all ? document.all["dumb"] : null;
+    document.MM_Time[0][36].keyFrames = new Array(220, 221, 227);
+    document.MM_Time[0][36].values = new Array(1);
+    document.MM_Time[0][36].values[0] = new Array("hidden","visible","visible");
+    document.MM_Time[0][36].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][36].values[0].prop2 = "style";
+    document.MM_Time[0][37] = new String("sprite");
+    document.MM_Time[0][37].slot = 1;
+    if (ns)
+        document.MM_Time[0][37].obj = document["dumb"] ? document["dumb"].document["dumbgame"] : document["dumbgame"];
+    else
+        document.MM_Time[0][37].obj = document.all ? document.all["dumbgame"] : null;
+    document.MM_Time[0][37].keyFrames = new Array(230, 239);
+    document.MM_Time[0][37].values = new Array(1);
+    document.MM_Time[0][37].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][37].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][37].values[0].prop2 = "style";
+    document.MM_Time[0][38] = new String("sprite");
+    document.MM_Time[0][38].slot = 1;
+    if (ns)
+        document.MM_Time[0][38].obj = document["dumb"] ? document["dumb"].document["interesting"] : document["interesting"];
+    else
+        document.MM_Time[0][38].obj = document.all ? document.all["interesting"] : null;
+    document.MM_Time[0][38].keyFrames = new Array(250, 259);
+    document.MM_Time[0][38].values = new Array(1);
+    document.MM_Time[0][38].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][38].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][38].values[0].prop2 = "style";
+    document.MM_Time[0][39] = new String("sprite");
+    document.MM_Time[0][39].slot = 1;
+    if (ns)
+        document.MM_Time[0][39].obj = document["dumb"] ? document["dumb"].document["intellegent"] : document["intellegent"];
+    else
+        document.MM_Time[0][39].obj = document.all ? document.all["intellegent"] : null;
+    document.MM_Time[0][39].keyFrames = new Array(240, 249);
+    document.MM_Time[0][39].values = new Array(1);
+    document.MM_Time[0][39].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][39].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][39].values[0].prop2 = "style";
+    document.MM_Time[0][40] = new String("sprite");
+    document.MM_Time[0][40].slot = 1;
+    if (ns)
+        document.MM_Time[0][40].obj = document["dumb"] ? document["dumb"].document["something"] : document["something"];
+    else
+        document.MM_Time[0][40].obj = document.all ? document.all["something"] : null;
+    document.MM_Time[0][40].keyFrames = new Array(260, 269);
+    document.MM_Time[0][40].values = new Array(1);
+    document.MM_Time[0][40].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][40].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][40].values[0].prop2 = "style";
+    document.MM_Time[0][41] = new String("sprite");
+    document.MM_Time[0][41].slot = 1;
+    if (ns)
+        document.MM_Time[0][41].obj = document["dumb"] ? document["dumb"].document["greycells"] : document["greycells"];
+    else
+        document.MM_Time[0][41].obj = document.all ? document.all["greycells"] : null;
+    document.MM_Time[0][41].keyFrames = new Array(270, 279);
+    document.MM_Time[0][41].values = new Array(1);
+    document.MM_Time[0][41].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][41].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][41].values[0].prop2 = "style";
+    document.MM_Time[0][42] = new String("sprite");
+    document.MM_Time[0][42].slot = 1;
+    if (ns)
+        document.MM_Time[0][42].obj = document["dumb"] ? document["dumb"].document["grandmaster"] : document["grandmaster"];
+    else
+        document.MM_Time[0][42].obj = document.all ? document.all["grandmaster"] : null;
+    document.MM_Time[0][42].keyFrames = new Array(280, 289);
+    document.MM_Time[0][42].values = new Array(1);
+    document.MM_Time[0][42].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][42].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][42].values[0].prop2 = "style";
+    document.MM_Time[0][43] = new String("sprite");
+    document.MM_Time[0][43].slot = 1;
+    if (ns)
+        document.MM_Time[0][43].obj = document["dumb"] ? document["dumb"].document["yup"] : document["yup"];
+    else
+        document.MM_Time[0][43].obj = document.all ? document.all["yup"] : null;
+    document.MM_Time[0][43].keyFrames = new Array(290, 299);
+    document.MM_Time[0][43].values = new Array(1);
+    document.MM_Time[0][43].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][43].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][43].values[0].prop2 = "style";
+    document.MM_Time[0][44] = new String("sprite");
+    document.MM_Time[0][44].slot = 1;
+    if (ns)
+        document.MM_Time[0][44].obj = document["dumb"] ? document["dumb"].document["guess"] : document["guess"];
+    else
+        document.MM_Time[0][44].obj = document.all ? document.all["guess"] : null;
+    document.MM_Time[0][44].keyFrames = new Array(300, 309);
+    document.MM_Time[0][44].values = new Array(1);
+    document.MM_Time[0][44].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][44].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][44].values[0].prop2 = "style";
+    document.MM_Time[0][45] = new String("sprite");
+    document.MM_Time[0][45].slot = 1;
+    if (ns)
+        document.MM_Time[0][45].obj = document["dumb"] ? document["dumb"].document["playchess"] : document["playchess"];
+    else
+        document.MM_Time[0][45].obj = document.all ? document.all["playchess"] : null;
+    document.MM_Time[0][45].keyFrames = new Array(310, 319);
+    document.MM_Time[0][45].values = new Array(1);
+    document.MM_Time[0][45].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][45].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][45].values[0].prop2 = "style";
+    document.MM_Time[0][46] = new String("sprite");
+    document.MM_Time[0][46].slot = 1;
+    if (ns)
+        document.MM_Time[0][46].obj = document["dumb"] ? document["dumb"].document["chess"] : document["chess"];
+    else
+        document.MM_Time[0][46].obj = document.all ? document.all["chess"] : null;
+    document.MM_Time[0][46].keyFrames = new Array(320, 329);
+    document.MM_Time[0][46].values = new Array(1);
+    document.MM_Time[0][46].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][46].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][46].values[0].prop2 = "style";
+    document.MM_Time[0][47] = new String("sprite");
+    document.MM_Time[0][47].slot = 1;
+    if (ns)
+        document.MM_Time[0][47].obj = document["dumb"] ? document["dumb"].document["earth"] : document["earth"];
+    else
+        document.MM_Time[0][47].obj = document.all ? document.all["earth"] : null;
+    document.MM_Time[0][47].keyFrames = new Array(330, 339);
+    document.MM_Time[0][47].values = new Array(1);
+    document.MM_Time[0][47].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][47].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][47].values[0].prop2 = "style";
+    document.MM_Time[0][48] = new String("sprite");
+    document.MM_Time[0][48].slot = 1;
+    if (ns)
+        document.MM_Time[0][48].obj = document["dumb"] ? document["dumb"].document["letsgo"] : document["letsgo"];
+    else
+        document.MM_Time[0][48].obj = document.all ? document.all["letsgo"] : null;
+    document.MM_Time[0][48].keyFrames = new Array(340, 349);
+    document.MM_Time[0][48].values = new Array(1);
+    document.MM_Time[0][48].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][48].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][48].values[0].prop2 = "style";
+    document.MM_Time[0][49] = new String("sprite");
+    document.MM_Time[0][49].slot = 1;
+    if (ns)
+        document.MM_Time[0][49].obj = document["dumb"] ? document["dumb"].document["seatbelts"] : document["seatbelts"];
+    else
+        document.MM_Time[0][49].obj = document.all ? document.all["seatbelts"] : null;
+    document.MM_Time[0][49].keyFrames = new Array(350, 359);
+    document.MM_Time[0][49].values = new Array(1);
+    document.MM_Time[0][49].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][49].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][49].values[0].prop2 = "style";
+    document.MM_Time[0][50] = new String("sprite");
+    document.MM_Time[0][50].slot = 1;
+    if (ns)
+        document.MM_Time[0][50].obj = document["dumb"] ? document["dumb"].document["aaahhh"] : document["aaahhh"];
+    else
+        document.MM_Time[0][50].obj = document.all ? document.all["aaahhh"] : null;
+    document.MM_Time[0][50].keyFrames = new Array(360, 369);
+    document.MM_Time[0][50].values = new Array(1);
+    document.MM_Time[0][50].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][50].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][50].values[0].prop2 = "style";
+    document.MM_Time[0][51] = new String("sprite");
+    document.MM_Time[0][51].slot = 1;
+    if (ns)
+        document.MM_Time[0][51].obj = document["loading"];
+    else
+        document.MM_Time[0][51].obj = document.all ? document.all["loading"] : null;
+    document.MM_Time[0][51].keyFrames = new Array(372, 375);
+    document.MM_Time[0][51].values = new Array(1);
+    document.MM_Time[0][51].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][51].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][51].values[0].prop2 = "style";
+    document.MM_Time[0][52] = new String("sprite");
+    document.MM_Time[0][52].slot = 1;
+    if (ns)
+        document.MM_Time[0][52].obj = document["loading"] ? document["loading"].document["one"] : document["one"];
+    else
+        document.MM_Time[0][52].obj = document.all ? document.all["one"] : null;
+    document.MM_Time[0][52].keyFrames = new Array(376, 380);
+    document.MM_Time[0][52].values = new Array(1);
+    document.MM_Time[0][52].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][52].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][52].values[0].prop2 = "style";
+    document.MM_Time[0][53] = new String("sprite");
+    document.MM_Time[0][53].slot = 1;
+    if (ns)
+        document.MM_Time[0][53].obj = document["loading"] ? document["loading"].document["two"] : document["two"];
+    else
+        document.MM_Time[0][53].obj = document.all ? document.all["two"] : null;
+    document.MM_Time[0][53].keyFrames = new Array(381, 385);
+    document.MM_Time[0][53].values = new Array(1);
+    document.MM_Time[0][53].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][53].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][53].values[0].prop2 = "style";
+    document.MM_Time[0][54] = new String("sprite");
+    document.MM_Time[0][54].slot = 1;
+    if (ns)
+        document.MM_Time[0][54].obj = document["loading"] ? document["loading"].document["three"] : document["three"];
+    else
+        document.MM_Time[0][54].obj = document.all ? document.all["three"] : null;
+    document.MM_Time[0][54].keyFrames = new Array(386, 390);
+    document.MM_Time[0][54].values = new Array(1);
+    document.MM_Time[0][54].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][54].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][54].values[0].prop2 = "style";
+    document.MM_Time[0][55] = new String("sprite");
+    document.MM_Time[0][55].slot = 1;
+    if (ns)
+        document.MM_Time[0][55].obj = document["loading"] ? document["loading"].document["four"] : document["four"];
+    else
+        document.MM_Time[0][55].obj = document.all ? document.all["four"] : null;
+    document.MM_Time[0][55].keyFrames = new Array(391, 395);
+    document.MM_Time[0][55].values = new Array(1);
+    document.MM_Time[0][55].values[0] = new Array("hidden","visible");
+    document.MM_Time[0][55].values[0].prop = "visibility";
+    if (!ns)
+        document.MM_Time[0][55].values[0].prop2 = "style";
+    document.MM_Time[0][56] = new String("behavior");
+    document.MM_Time[0][56].frame = 398;
+    document.MM_Time[0][56].value = "MM_goToURL('parent','Chess.htm')";
+    document.MM_Time[0].lastFrame = 398;
+    for (i=0; i<document.MM_Time.length; i++) {
+        document.MM_Time[i].ID = null;
+        document.MM_Time[i].curFrame = 0;
+        document.MM_Time[i].delay = 1000/document.MM_Time[i].fps;
+    }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#666666" link="navy" vlink="navy" alink="navy" onLoad="MM_timelinePlay('Timeline1')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td> 
+      <div align="center"><img src="varunmehta.gif" width="350" height="20"></div>
+    </td>
+  </tr>
+</table>
+<font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#999999">&copy;varunmehta 
+2000-2001</font><font size="4" face="Verdana, Arial, Helvetica, sans-serif"> </font>
+<div id="pingpong" style="position:absolute; width:699px; height:347px; z-index:1; left: 9px; top: 79px; visibility: visible"> 
+  <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="6">Ping 
+    - Pong</font> <font face="Verdana, Arial, Helvetica, sans-serif" size="6"> 
+    </font> 
+    <div id="left" style="position:absolute; width:8px; height:150px; z-index:2; left: 50px; top: -232px; background-color: #666666; layer-background-color: #666666; border: 1px none #000000"></div>
+    <div id="right" style="position:absolute; width:8px; height:150px; z-index:2; left: 600px; top: 686px; background-color: #686868; layer-background-color: #686868; border: 1px none #000000"></div>
+    <div id="start" style="position:absolute; width:186px; height:21px; z-index:2; left: 242px; top: 152px; visibility: hidden"><font size="5" face="Verdana, Arial, Helvetica, sans-serif">S 
+      t a r t</font></div>
+    <div id="ball" style="position:absolute; width:21px; height:8px; z-index:2; left: 322px; top: 183px; visibility: hidden"><font size="6" face="Verdana, Arial, Helvetica, sans-serif"><b>O</b></font></div>
+    <div id="boring" style="position:absolute; width:279px; height:20px; z-index:3; left: 188px; top: 160px; visibility: hidden"><font size="4" face="Verdana, Arial, Helvetica, sans-serif"><b>B 
+      - O - R - I - N - G </b></font></div>
+    <div id="stop" style="position:absolute; width:441px; height:21px; z-index:3; left: 119px; top: 212px; visibility: hidden"><font size="4" face="Verdana, Arial, Helvetica, sans-serif"><b>S 
+      t o p &nbsp; t h e&nbsp;&nbsp; g o d d a m n&nbsp;&nbsp; g a m e </b></font></div>
+    <div id="oneright" style="position:absolute; width:21px; height:30px; z-index:4; left: 1px; top: 243px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000; visibility: hidden"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">1</font></div>
+  
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    
+    <p>&nbsp;</p>
+  </div>
+</div> 
+<div id="dumb" style="position:absolute; width:714px; height:418px; z-index:2; left: 9px; top: 79px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000; visibility: hidden"> 
+  <div id="dumbgame" style="position:absolute; width:138px; height:16px; z-index:1; left: 15px; top: 19px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Dumb 
+    game </font></div>
+  <div id="intellegent" style="position:absolute; width:204px; height:11px; z-index:2; left: 15px; top: 36px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Let's 
+    play some intelligent game</font></div>
+  <div id="interesting" style="position:absolute; width:189px; height:14px; z-index:3; left: 15px; top: 53px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Something 
+    that's interesting</font></div>
+  <div id="something" style="position:absolute; width:189px; height:11px; z-index:4; left: 15px; top: 69px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Something 
+    that will give</font></div>
+  <div id="greycells" style="position:absolute; width:276px; height:15px; z-index:5; left: 15px; top: 86px; visibility: hidden"> 
+    <font size="2" face="Arial, Helvetica, sans-serif">a great work out to your 
+    grey cells</font></div>
+  <div id="grandmaster" style="position:absolute; width:191px; height:15px; z-index:6; left: 15px; top: 122px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Wanna 
+    be a grand master</font></div>
+  <div id="yup" style="position:absolute; width:72px; height:5px; z-index:7; left: 15px; top: 139px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Yup...</font></div>
+  <div id="guess" style="position:absolute; width:184px; height:10px; z-index:8; left: 15px; top: 156px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">You 
+    guessed man</font></div>
+  <div id="playchess" style="position:absolute; width:204px; height:13px; z-index:9; left: 15px; top: 173px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Let's 
+    play <b>&nbsp;&quot; C h e s s &quot;</b></font></div>
+  <div id="chess" style="position:absolute; width:192px; height:2px; z-index:10; left: 15px; top: 203px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif"><b>C 
+    H E S S </b></font></div>
+  <div id="earth" style="position:absolute; width:197px; height:13px; z-index:11; left: 15px; top: 220px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">The 
+    best game on this Earth</font></div>
+  <div id="letsgo" style="position:absolute; width:186px; height:16px; z-index:12; left: 15px; top: 237px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Let's 
+    go </font></div>
+  <div id="seatbelts" style="position:absolute; width:190px; height:17px; z-index:13; left: 15px; top: 254px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Fasten 
+    your seatbelts</font></div>
+  <div id="aaahhh" style="position:absolute; width:411px; height:17px; z-index:14; left: 15px; top: 286px; visibility: hidden"><font size="2" face="Arial, Helvetica, sans-serif">Aaaaaaaaahhhhhhhhhhhhhh........................................... 
+    </font> </div>
+</div>
+<div id="loading" style="position:absolute; width:765px; height:457px; z-index:3; left: 1px; top: 69px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000; visibility: hidden"> 
+  <div id="load" style="position:absolute; width:153px; height:37px; z-index:1; left: 154px; top: 172px"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">Loading 
+    .</font> </div>
+  <div id="one" style="position:absolute; width:12px; height:37px; z-index:2; left: 308px; top: 172px; visibility: hidden"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">. 
+    </font> </div>
+  <div id="two" style="position:absolute; width:14px; height:34px; z-index:3; left: 321px; top: 172px; visibility: hidden"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">. 
+    </font> </div>
+  <div id="three" style="position:absolute; width:15px; height:28px; z-index:4; left: 336px; top: 172px; visibility: hidden"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">. 
+    </font> </div>
+  <div id="four" style="position:absolute; width:12px; height:35px; z-index:5; left: 352px; top: 172px; visibility: hidden"><font size="6" face="Verdana, Arial, Helvetica, sans-serif">. 
+    </font> </div>
+</div>
+</body>
+</html>

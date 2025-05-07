@@ -1,0 +1,12 @@
+.Verdana9 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9pt}
+.Verdana12 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14pt}
+.Verdana8 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt}
+body {scrollbar-arrow-color:#999999;
+scrollbar-base-color:#4b5870;
+scrollbar-shadow-color:#4b5870;
+scrollbar-face-color:#2F3850;
+scrollbar-highlight-color:#2F3850;
+scrollbar-dark-shadow-color:#999999;
+scrollbar-3d-light-color:#4b5870;}
+a {  text-decoration: none; color: #CCCCCC}
+a:hover {  color: #FFFFFF; text-decoration: underline}

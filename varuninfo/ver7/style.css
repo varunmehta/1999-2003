@@ -1,0 +1,82 @@
+.Arial8 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+.Arial9 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+a:hover {
+	color: #006699;
+	text-decoration: underline;
+}
+a {
+	color: #FF6600;
+	text-decoration: none;
+}
+.Arial14 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+}
+body {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+.TableBorder {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	border-top-color: #006699;
+	border-right-color: #006699;
+	border-bottom-color: #006699;
+	border-left-color: #006699;
+}
+.LeftBorder {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: dotted;
+	border-top-color: #006699;
+	border-right-color: #006699;
+	border-bottom-color: #006699;
+	border-left-color: #006699;
+}
+.LeftnBottom {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dotted;
+	border-left-style: dotted;
+	border-top-color: #006699;
+	border-right-color: #006699;
+	border-bottom-color: #006699;
+	border-left-color: #006699;
+}
+.RightnBottom {
+
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: dotted;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	border-top-color: #006699;
+	border-right-color: #006699;
+	border-bottom-color: #006699;
+	border-left-color: #006699;
+}
