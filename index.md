@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 1999-2003 Web Archive
+permalink: /index.html
 ---
 
 # 1999-2003 Web Development Archive

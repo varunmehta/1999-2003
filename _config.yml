@@ -1,0 +1,21 @@
+# Jekyll configuration for 1999-2003 Archive
+title: "1999-2003 Web Archive"
+description: "Archive of web development projects from 1999-2003"
+baseurl: "/1999-2003"
+url: "https://varunmehta.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Don't process these directories - serve files as-is
+include:
+  - "_*"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - .git
+  - .gitignore
+  - .DS_Store
+  - "*.swf"
