@@ -8,9 +8,17 @@ url: "https://varunmehta.github.io"
 markdown: kramdown
 theme: minima
 
-# Don't process these directories - serve files as-is
+# Include all files and directories
 include:
   - "_*"
+  - "*.htm"
+  - "*.html"
+  - "*.swf"
+  - "*.gif"
+  - "*.jpg"
+  - "*.png"
+  - "*.css"
+  - "*.js"
 
 # Exclude from processing
 exclude:
@@ -18,4 +26,10 @@ exclude:
   - .git
   - .gitignore
   - .DS_Store
+
+# Keep files - don't delete these during build
+keep_files:
   - "*.swf"
+  - "*.gif"
+  - "*.jpg"
+  - "*.png"
